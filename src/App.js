@@ -1,16 +1,14 @@
 import Container from '@mui/material/Container';
-import { Typography } from '@mui/material';
 import { useEffect } from "react";
+import Appbar from './components/Appbar';
 
 function App() {
   useEffect(() => {
-    document.title = 'My App';
+    document.title = 'React MUI';
   });
   return (
-    <Container maxWidth="xl" sx={{ bgcolor: '#cfe8fc', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Typography variant='h2' color='primary'>
-        Hello World!
-      </Typography>
+    <Container maxWidth="xl" sx={{ minHeight: '100vh' }}>
+      <Appbar/>
     </Container>
   );
 }
